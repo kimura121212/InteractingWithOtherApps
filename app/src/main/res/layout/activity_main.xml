@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.interactingwithotherapps.MainActivity">
+
+    <TextView
+        android:id="@+id/hello_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+    <Button
+        android:id="@+id/tel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hello_text"
+        android:text="Tel"
+        android:onClick="tel" />
+    <Button
+        android:id="@+id/map_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hello_text"
+        android:layout_toEndOf="@+id/tel_button"
+        android:text="Map"
+        android:onClick="map" />
+    <Button
+        android:id="@+id/web_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hello_text"
+        android:layout_toEndOf="@+id/map_button"
+        android:text="Web"
+        android:onClick="web" />
+    <Button
+        android:id="@+id/email_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hello_text"
+        android:layout_toEndOf="@+id/web_button"
+        android:text="Email"
+        android:onClick="email" />
+    <Button
+        android:id="@+id/cal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tel_button"
+        android:text="Cal"
+        android:onClick="cal" />
+    <Button
+        android:id="@+id/contact_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tel_button"
+        android:layout_toEndOf="@+id/cal_button"
+        android:text="Contact"
+        android:onClick="contact" />
+    <Button
+        android:id="@+id/request_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tel_button"
+        android:layout_toEndOf="@+id/contact_button"
+        android:text="Request"
+        android:onClick="request" />
+</RelativeLayout>
